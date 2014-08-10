@@ -132,7 +132,7 @@ bool DoodadBrush::loadAlternative(pugi::xml_node node, wxArrayString& warnings, 
 				} else if (y < -0x7FFF || y > 0x7FFF) {
 					warnings.push_back(wxT("Invalid range of y value on composite tile node."));
 					continue;
-				} else if (z < -0x7 || z > 0x7) {
+				} else if (z < -0x7 || z > 0x92) {
 					warnings.push_back(wxT("Invalid range of z value on composite tile node."));
 					continue;
 				}

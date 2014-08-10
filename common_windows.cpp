@@ -620,7 +620,7 @@ void ExportMiniMapWindow::OnClickOK(wxCommandEvent& WXUNUSED(event))
 		{
 			case 0: 
 			{ // All floors
-					for(int floor = 0; floor < 16; ++floor) 
+					for(int floor = 0; floor < 100; ++floor) 
 					{
 						gui.SetLoadScale(int(floor*(100.f/16.f)), int((floor+1)*(100.f/16.f)));
 						FileName fn = wxstr(pre_sep + i2s(floor) + post_sep);

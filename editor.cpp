@@ -1018,7 +1018,7 @@ void Editor::moveSelection(Position offset)
 
 		new_pos = old_pos - offset;
 
-		if(new_pos.z < 0 && new_pos.z > 15) {
+		if(new_pos.z < 0 && new_pos.z > 99) {
 			delete tile;
 			continue;
 		}

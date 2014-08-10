@@ -162,6 +162,90 @@ MainMenuBar::MainMenuBar(MainFrame *frame) : frame(frame)
 	MAKE_ACTION(FLOOR_13, wxITEM_RADIO, OnChangeFloor);
 	MAKE_ACTION(FLOOR_14, wxITEM_RADIO, OnChangeFloor);
 	MAKE_ACTION(FLOOR_15, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_16, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_17, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_18, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_19, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_20, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_21, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_22, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_23, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_24, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_25, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_26, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_27, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_28, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_29, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_30, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_31, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_32, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_33, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_34, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_35, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_36, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_37, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_38, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_39, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_40, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_41, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_42, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_43, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_44, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_45, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_46, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_47, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_48, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_49, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_50, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_51, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_52, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_53, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_54, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_55, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_56, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_57, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_58, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_59, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_60, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_61, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_62, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_63, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_64, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_65, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_66, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_67, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_68, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_69, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_70, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_71, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_72, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_73, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_74, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_75, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_76, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_77, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_78, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_79, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_80, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_81, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_82, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_83, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_84, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_85, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_86, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_87, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_88, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_89, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_90, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_91, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_92, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_93, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_94, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_95, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_96, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_97, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_98, wxITEM_RADIO, OnChangeFloor);
+	MAKE_ACTION(FLOOR_99, wxITEM_RADIO, OnChangeFloor);
 
 	MAKE_ACTION(DEBUG_VIEW_DAT, wxITEM_NORMAL, OnDebugViewDat);
 	MAKE_ACTION(EXTENSIONS, wxITEM_NORMAL, OnListExtensions);
@@ -407,7 +491,7 @@ void MainMenuBar::UpdateFloorMenu()
 {
 	if(gui.IsEditorOpen())
 	{
-		for(int i = 0; i < 16; ++i)
+		for(int i = 0; i < 100; ++i)
 			CheckItem(MenuBar::ActionID(MenuBar::FLOOR_0 + i), false);
 		CheckItem(MenuBar::ActionID(MenuBar::FLOOR_0 + gui.GetCurrentFloor()), true);
 	}
@@ -1309,7 +1393,7 @@ namespace OnMapRemoveUnreachable
 			{
 				// underground
 				sz = std::max(pos.z - 2, 7);
-				ez = std::min(pos.z + 2, 15);
+				ez = std::min(pos.z + 2, 99);
 			}
 
 			for(int z = sz; z <= ez; ++z)
@@ -1761,7 +1845,7 @@ void MainMenuBar::OnChangeFloor(wxCommandEvent& event)
 	if(checking_programmaticly)
 		return;
 
-	for(int i = 0; i < 16; ++i) {
+	for(int i = 0; i < 100; ++i) {
 		if(IsItemChecked(MenuBar::ActionID(MenuBar::FLOOR_0 + i))) {
 			gui.ChangeFloor(i);
 		}

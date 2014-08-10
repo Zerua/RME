@@ -104,7 +104,7 @@ void LiveSocket::receiveNode(NetworkMessage& message, Editor& editor, Action* ac
 		return;
 	}
 
-	for (uint_fast8_t z = 0; z < 16; ++z) {
+	for (uint_fast8_t z = 0; z < 100; ++z) {
 		if (testFlags(floorBits, 1 << z)) {
 			receiveFloor(message, editor, action, ndx, ndy, z, node, node->getFloor(z));
 		}
@@ -137,7 +137,7 @@ void LiveSocket::sendNode(uint32_t clientId, QTreeNode* node, int32_t ndx, int32
 		Floor** floors = node->getFloors();
 
 		uint16_t sendMask = 0;
-		for (uint32_t z = 0; z < 16; ++z) {
+		for (uint32_t z = 0; z < 100; ++z) {
 			uint32_t bit = 1 << z;
 			if (floors[z] && testFlags(floorMask, bit)) {
 				sendMask |= bit;
@@ -145,7 +145,7 @@ void LiveSocket::sendNode(uint32_t clientId, QTreeNode* node, int32_t ndx, int32
 		}
 
 		message.write<uint16_t>(sendMask);
-		for (uint32_t z = 0; z < 16; ++z) {
+		for (uint32_t z = 0; z < 100; ++z) {
 			if (testFlags(sendMask, 1 << z)) {
 				sendFloor(message, floors[z]);
 			}

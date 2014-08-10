@@ -107,7 +107,7 @@
 #define RAD2DEG (180.0/DEG)
 
 // The height of the map (there should be more checks for this...)
-#define MAP_HEIGHT 16
+#define MAP_HEIGHT 100
 
 // wxString conversions
 #define nstr(str) std::string((const char*)(str.mb_str(wxConvUTF8)))

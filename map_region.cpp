@@ -47,7 +47,7 @@ Floor::Floor(int sx, int sy, int z)
 	sx = sx & ~3;
 	sy = sy & ~3;
 
-	for(int i = 0; i < 16; ++i)
+	for(int i = 0; i < 100; ++i)
 	{
 		locs[i].position.x = sx + (i >> 2);
 		locs[i].position.y = sy + (i & 3);
@@ -63,7 +63,7 @@ QTreeNode::QTreeNode(BaseMap& map) :
 	isLeaf(false)
 {
 	// Doesn't matter if we're leaf or node
-	for(int i = 0; i < 16; ++i)
+	for(int i = 0; i < 100; ++i)
 		child[i] = nullptr;
 }
 
@@ -87,6 +87,91 @@ QTreeNode::~QTreeNode()
 		delete array[13];
 		delete array[14];
 		delete array[15];
+		delete array[16];
+		delete array[17];
+		delete array[18];
+		delete array[19];
+		delete array[20];
+		delete array[21];
+		delete array[22];
+		delete array[23];
+		delete array[24];
+		delete array[25];
+		delete array[26];
+		delete array[27];
+		delete array[28];
+		delete array[29];
+		delete array[30];
+		delete array[31];
+		delete array[32];
+		delete array[33];
+		delete array[34];
+		delete array[35];
+		delete array[36];
+		delete array[37];
+		delete array[38];
+		delete array[39];
+		delete array[40];
+		delete array[41];
+		delete array[42];
+		delete array[43];
+		delete array[44];
+		delete array[45];
+		delete array[46];
+		delete array[47];
+		delete array[48];
+		delete array[49];
+		delete array[50];
+		delete array[51];
+		delete array[52];
+		delete array[53];
+		delete array[54];
+		delete array[55];
+		delete array[56];
+		delete array[57];
+		delete array[58];
+		delete array[59];
+		delete array[60];
+		delete array[61];
+		delete array[62];
+		delete array[63];
+		delete array[64];
+		delete array[65];
+		delete array[66];
+		delete array[67];
+		delete array[68];
+		delete array[69];
+		delete array[70];
+		delete array[71];
+		delete array[72];
+		delete array[73];
+		delete array[74];
+		delete array[75];
+		delete array[76];
+		delete array[77];
+		delete array[78];
+		delete array[79];
+		delete array[80];
+		delete array[81];
+		delete array[82];
+		delete array[83];
+		delete array[84];
+		delete array[85];
+		delete array[86];
+		delete array[87];
+		delete array[88];
+		delete array[89];
+		delete array[90];
+		delete array[91];
+		delete array[92];
+		delete array[93];
+		delete array[94];
+		delete array[95];
+		delete array[96];
+		delete array[97];
+		delete array[98];
+		delete array[99];
+		delete array[100];
 	}
 	else
 	{
@@ -106,6 +191,91 @@ QTreeNode::~QTreeNode()
 		delete child[13];
 		delete child[14];
 		delete child[15];
+		delete child[16];
+		delete child[17];
+		delete child[18];
+		delete child[19];
+		delete child[20];
+		delete child[21];
+		delete child[22];
+		delete child[23];
+		delete child[24];
+		delete child[25];
+		delete child[26];
+		delete child[27];
+		delete child[28];
+		delete child[29];
+		delete child[30];
+		delete child[31];
+		delete child[32];
+		delete child[33];
+		delete child[34];
+		delete child[35];
+		delete child[36];
+		delete child[37];
+		delete child[38];
+		delete child[39];
+		delete child[40];
+		delete child[41];
+		delete child[42];
+		delete child[43];
+		delete child[44];
+		delete child[45];
+		delete child[46];
+		delete child[47];
+		delete child[48];
+		delete child[49];
+		delete child[50];
+		delete child[51];
+		delete child[52];
+		delete child[53];
+		delete child[54];
+		delete child[55];
+		delete child[56];
+		delete child[57];
+		delete child[58];
+		delete child[59];
+		delete child[60];
+		delete child[61];
+		delete child[62];
+		delete child[63];
+		delete child[64];
+		delete child[65];
+		delete child[66];
+		delete child[67];
+		delete child[68];
+		delete child[69];
+		delete child[70];
+		delete child[71];
+		delete child[72];
+		delete child[73];
+		delete child[74];
+		delete child[75];
+		delete child[76];
+		delete child[77];
+		delete child[78];
+		delete child[79];
+		delete child[80];
+		delete child[81];
+		delete child[82];
+		delete child[83];
+		delete child[84];
+		delete child[85];
+		delete child[86];
+		delete child[87];
+		delete child[88];
+		delete child[89];
+		delete child[90];
+		delete child[91];
+		delete child[92];
+		delete child[93];
+		delete child[94];
+		delete child[95];
+		delete child[96];
+		delete child[97];
+		delete child[98];
+		delete child[99];
+		delete child[100];
 	}
 }
 
@@ -203,7 +373,7 @@ void QTreeNode::clearVisible(uint32_t u)
 	if(isLeaf)
 		visible &= u;
 	else
-		for(int i = 0; i < 16; ++i)
+		for(int i = 0; i < 100; ++i)
 			if(child[i])
 				child[i]->clearVisible(u);
 }
@@ -246,9 +416,9 @@ void QTreeNode::setRequested(bool underground, bool r)
 void QTreeNode::setVisible(uint32_t client, bool underground, bool value)
 {
 	if(value)
-		visible |= (1 << client << (underground? 16 : 0));
+		visible |= (1 << client << (underground? 100 : 0));
 	else
-		visible &= ~(1 << client << (underground? 16 : 0));
+		visible &= ~(1 << client << (underground? 100 : 0));
 }
 
 TileLocation* QTreeNode::getTile(int x, int y, int z)

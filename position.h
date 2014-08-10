@@ -120,7 +120,7 @@ inline std::istream& operator>>(std::istream& is, Position& pos) {
 }
 
 inline bool Position::isValid() const {
-	return x >= 0 && x <= 0xFFFF && y >= 0 && y <= 0xFFFF && z >= 0 && z <= 15;
+	return x >= 0 && x <= 0xFFFF && y >= 0 && y <= 0xFFFF && z >= 0 && z <= 99;
 }
 
 inline Position abs(const Position& position) {

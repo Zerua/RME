@@ -1007,7 +1007,7 @@ void MapCanvas::OnMouseActionRelease(wxMouseEvent& event)
 							{
 								start_z = 7;
 							} else {
-								start_z = std::min(15, floor + 2);
+								start_z = std::min(16, floor + 2);
 							}
 							end_x = mouse_map_x;
 							end_y = mouse_map_y;
@@ -1481,7 +1481,7 @@ void MapCanvas::OnMousePropertiesRelease(wxMouseEvent& event)
 					{
 						start_z = 7;
 					} else {
-						start_z = std::min(15, floor + 2);
+						start_z = std::min(16, floor + 2);
 					}
 					end_x = mouse_map_x;
 					end_y = mouse_map_y;
@@ -2189,7 +2189,7 @@ void MapCanvas::OnProperties(wxCommandEvent& WXUNUSED(event))
 
 void MapCanvas::ChangeFloor(int new_floor)
 {
-	ASSERT(new_floor >= 0 || new_floor <= 15);
+	ASSERT(new_floor >= 0 || new_floor <= 99);
 	int old_floor = floor;
 	floor = new_floor;
 	if(old_floor != new_floor)

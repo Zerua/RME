@@ -185,7 +185,7 @@ MapIterator BaseMap::begin()
 					//printf("\t%p is leaf\n", child);
 					for(it.local_z = 0; it.local_z < MAP_HEIGHT; ++it.local_z) {
 						if(Floor* floor = leaf->array[it.local_z]) {
-							for(it.local_i = 0; it.local_i < 16; ++it.local_i) {
+							for(it.local_i = 0; it.local_i < 100; ++it.local_i) {
 								//printf("\tit(%d;%d;%d)\n", it.local_x, it.local_y, it.local_z);
 								TileLocation& t = floor->locs[it.local_i];
 								if(t.get()) {
@@ -256,7 +256,7 @@ MapIterator& MapIterator::operator++()
 						//printf("\t\tIterating over Z:%d of %p", local_z, child);
 						if(Floor* floor = leaf->array[local_z]) {
 							//printf("\n");
-							for(; local_i < 16; ++local_i) {
+							for(; local_i < 100; ++local_i) {
 								//printf("\t\tIterating over Y:%d of %p\n", local_y, child);
 								TileLocation& t = floor->locs[local_i];
 								if(t.get()) {
@@ -273,7 +273,7 @@ MapIterator& MapIterator::operator++()
 								}
 							}
 							
-							if(local_i > 15) {
+							if(local_i > 99) {
 								//printf("\t\tReset local_x\n");
 								local_i = 0;
 							}

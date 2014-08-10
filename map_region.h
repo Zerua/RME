@@ -60,7 +60,7 @@ public:
 class Floor {
 public:
 	Floor(int x, int y, int z);
-	TileLocation locs[16];
+	TileLocation locs[100];
 };
 
 // This is not a QuadTree, but a HexTree (16 child nodes to every node), so the name is abit misleading
@@ -105,10 +105,10 @@ protected:
 
 	bool isLeaf;
 	union {
-		QTreeNode* child[16];
+		QTreeNode* child[100];
 		Floor* array[MAP_HEIGHT];
-#if 16 != MAP_HEIGHT
-#    error "You need to rewrite the QuadTree in order to handle more or less than 16 floors"
+#if 100 != MAP_HEIGHT
+#    error "You need to rewrite the QuadTree in order to handle more or less than 100 floors"
 #endif
 	};
 

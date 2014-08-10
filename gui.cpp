@@ -1199,7 +1199,7 @@ void GUI::ChangeFloor(int new_floor)
 	{
 		int old_floor = GetCurrentFloor();
 		if(new_floor < 0) return;
-		if(new_floor > 15) return;
+		if(new_floor > 99) return;
 		if(old_floor != new_floor)
 			tab->GetCanvas()->ChangeFloor(new_floor);
 

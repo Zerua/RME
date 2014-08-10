@@ -43,7 +43,7 @@ void MapDrawer::SetupVars()
 		if(floor < 8)
 			start_z = 7;
 		else
-			start_z = std::min(15, floor + 2);
+			start_z = std::min(99, floor + 2);
 	}
 	else
 		start_z = floor;
